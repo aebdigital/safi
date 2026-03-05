@@ -14,32 +14,31 @@ export default function About() {
                     whileInView={{ opacity: 1, rotate: -1, scale: 1 }}
                     viewport={{ once: true }}
                     transition={{ duration: 1 }}
-                    className="relative w-full max-w-[650px] drop-shadow-2xl"
+                    className="relative w-full max-w-[650px] drop-shadow-2xl flex flex-col"
                 >
-                    <div className="relative">
+                    <div className="absolute inset-0 z-0">
                         <Image
                             src="/images/about.png"
                             alt="O nás notebook"
-                            width={700}
-                            height={900}
-                            className="w-full h-auto drop-shadow-lg"
+                            fill
+                            className="object-fill md:object-contain drop-shadow-lg"
                         />
-                        <div className="absolute inset-0 pt-12 px-10 md:pt-28 md:px-24 flex flex-col gap-4 notebook-text font-handwritten text-primary pointer-events-none">
-                            <div className="flex items-baseline gap-2 mb-4">
-                                <span className="text-[#558333] text-2xl md:text-3xl" style={{ fontFamily: 'var(--font-boring)' }}>SAFI SK</span>
-                                <span className="font-bold font-sans text-[10px] md:text-xs tracking-widest text-[#222] uppercase">Stavebný dozor</span>
-                            </div>
-                            <h2 className="text-3xl md:text-5xl pb-2 text-[#0047AB] font-handwritten">O nás</h2>
-                            <p className="text-sm md:text-lg leading-relaxed opacity-90 mt-2 text-[#0047AB]">
-                                Spoločnosť SAFI SK bola založená v roku 2015 ako rodinná firma manželov Ing. Mariána Antala a Mgr. Martiny Antalovej. Založením našej spoločnosti sme sa rozhodli zužitkovať naše dlhoročné skúsenosti v oblasti stavebníctva.
-                            </p>
-                            <p className="text-sm md:text-lg leading-relaxed opacity-90 mt-2 text-[#0047AB]">
-                                Chceme poskytnúť zákazníkom uľahčenie procesu ešte pred samotnou realizáciou stavby, ktorý spočíva vo vybavení podkladov pre jednotlivé povolenia. Pripravíme potrebné dokumenty k stavbe a zariadime komunikáciu s príslušnými úradmi, čím ušetríme klientom množstvo času.
-                            </p>
-                            <p className="text-sm md:text-lg leading-relaxed opacity-90 mt-2 text-[#0047AB]">
-                                Vydaním jednotlivých povolení pre nás práca pre klienta nekonči.
-                            </p>
+                    </div>
+                    <div className="relative z-10 pt-8 px-8 pb-12 md:pt-28 md:px-24 md:pb-24 flex flex-col gap-4 notebook-text font-handwritten text-primary">
+                        <div className="flex items-baseline gap-2 mb-4">
+                            <span className="text-[#558333] text-2xl md:text-3xl" style={{ fontFamily: 'var(--font-boring)' }}>SAFI SK</span>
+                            <span className="font-bold font-sans text-[10px] md:text-xs tracking-widest text-[#222] uppercase">Stavebný dozor</span>
                         </div>
+                        <h2 className="text-3xl md:text-5xl pb-2 text-[#0047AB] font-handwritten">O nás</h2>
+                        <p className="text-sm md:text-lg leading-relaxed opacity-90 mt-2 text-[#0047AB]">
+                            Spoločnosť SAFI SK bola založená v roku 2015 ako rodinná firma manželov Ing. Mariána Antala a Mgr. Martiny Antalovej. Založením našej spoločnosti sme sa rozhodli zužitkovať naše dlhoročné skúsenosti v oblasti stavebníctva.
+                        </p>
+                        <p className="text-sm md:text-lg leading-relaxed opacity-90 mt-2 text-[#0047AB]">
+                            Chceme poskytnúť zákazníkom uľahčenie procesu ešte pred samotnou realizáciou stavby, ktorý spočíva vo vybavení podkladov pre jednotlivé povolenia. Pripravíme potrebné dokumenty k stavbe a zariadime komunikáciu s príslušnými úradmi, čím ušetríme klientom množstvo času.
+                        </p>
+                        <p className="text-sm md:text-lg leading-relaxed opacity-90 mt-2 text-[#0047AB]">
+                            Vydaním jednotlivých povolení pre nás práca pre klienta nekonči.
+                        </p>
                     </div>
                 </motion.div>
 
