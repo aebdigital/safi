@@ -76,7 +76,7 @@ export default function ServicePage({ title, description, points, image, current
 
             {/* Content Section */}
             <section className="w-[90%] md:container mx-auto md:px-12 py-24 grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
-                <div className="relative w-[110%] -left-[5%]-col lg:left-0 lg:w-full drop-shadow-2xl flex flex-col">
+                <div className="relative w-[110%] -left-[5%] lg:left-0 lg:w-full drop-shadow-2xl flex flex-col">
                     <div className="absolute inset-0 z-0">
                         <Image
                             src="/images/small+service.png"
