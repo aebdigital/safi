@@ -76,7 +76,7 @@ export default function ServicePage({ title, description, points, image, current
 
             {/* Content Section */}
             <section className="w-[90%] md:container mx-auto md:px-12 py-24 grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
-                <div className="relative w-full drop-shadow-2xl flex flex-col">
+                <div className="relative w-[110%] -left-[5%]-col lg:left-0 lg:w-full drop-shadow-2xl flex flex-col">
                     <div className="absolute inset-0 z-0">
                         <Image
                             src="/images/small+service.png"
@@ -85,7 +85,7 @@ export default function ServicePage({ title, description, points, image, current
                             className="object-fill md:object-contain drop-shadow-lg"
                         />
                     </div>
-                    <div className="relative z-10 pt-16 px-10 pb-16 md:pt-24 md:px-20 md:pb-24 flex flex-col gap-2 notebook-text font-handwritten text-[#0047AB]">
+                    <div className="relative z-10 pt-16 px-14 pb-16 md:pt-24 md:px-20 md:pb-24 flex flex-col gap-2 notebook-text font-handwritten text-[#0047AB]">
                         <div className="absolute top-8 right-8 md:top-16 md:right-16 flex items-baseline gap-2">
                             <span className="text-[#558333] text-xl md:text-2xl" style={{ fontFamily: 'var(--font-boring)' }}>SAFI SK</span>
                             <span className="font-bold font-sans text-[10px] md:text-xs tracking-widest text-[#0047AB] uppercase">Stavebný dozor</span>

@@ -14,7 +14,7 @@ export default function About() {
                     whileInView={{ opacity: 1, rotate: -1, scale: 1 }}
                     viewport={{ once: true }}
                     transition={{ duration: 1 }}
-                    className="relative w-full max-w-[650px] drop-shadow-2xl flex flex-col"
+                    className="relative w-[110%] -left-[5%] md:left-0 md:w-full md:max-w-[650px] drop-shadow-2xl flex flex-col"
                 >
                     <div className="absolute inset-0 z-0">
                         <Image
@@ -24,7 +24,7 @@ export default function About() {
                             className="object-fill md:object-contain drop-shadow-lg"
                         />
                     </div>
-                    <div className="relative z-10 pt-8 px-8 pb-12 md:pt-28 md:px-24 md:pb-24 flex flex-col gap-4 notebook-text font-handwritten text-primary">
+                    <div className="relative z-10 pt-10 px-14 pb-14 md:pt-28 md:px-24 md:pb-24 flex flex-col gap-4 notebook-text font-handwritten text-primary">
                         <div className="flex items-baseline gap-2 mb-4">
                             <span className="text-[#558333] text-2xl md:text-3xl" style={{ fontFamily: 'var(--font-boring)' }}>SAFI SK</span>
                             <span className="font-bold font-sans text-[10px] md:text-xs tracking-widest text-[#222] uppercase">Stavebný dozor</span>
