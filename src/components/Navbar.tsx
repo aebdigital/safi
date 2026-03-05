@@ -35,16 +35,20 @@ export default function Navbar() {
 
     return (
         <nav
-            className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? "bg-white/95 backdrop-blur-sm shadow-md py-3" : "bg-white/80 py-5"
+            className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isOpen
+                ? "bg-white shadow-md py-2.5"
+                : scrolled
+                    ? "bg-white/95 backdrop-blur-sm shadow-md py-1.5 md:py-3"
+                    : "bg-white/80 py-2.5 md:py-5"
                 }`}
         >
-            <div className="container mx-auto px-6 md:px-12 flex justify-between items-center">
-                <Link href="/" className="flex items-baseline gap-3 md:gap-5">
+            <div className="w-[90%] md:container mx-auto md:px-12 flex justify-between items-center">
+                <Link href="/" className="flex flex-col md:flex-row md:items-baseline gap-0 md:gap-5">
                     <div className="flex items-baseline gap-1 md:gap-3">
                         <span className="text-[#558333] text-5xl md:text-6xl lg:text-[5rem] leading-[0.8]" style={{ fontFamily: 'var(--font-boring)' }}>SAFI SK</span>
                         <span className="text-[#808080] text-3xl md:text-4xl lg:text-5xl leading-[0.8]" style={{ fontFamily: 'var(--font-boring)' }}>s.r.o.</span>
                     </div>
-                    <span className="text-gray-500 font-bold mt-2 md:mt-0 text-[10px] md:text-sm lg:text-base uppercase tracking-[0.2em] font-sans">
+                    <span className="text-gray-500 font-bold text-[10px] md:text-sm lg:text-base uppercase tracking-[0.2em] font-sans">
                         Stavebný dozor
                     </span>
                 </Link>
@@ -96,7 +100,7 @@ export default function Navbar() {
 
             {/* Mobile Nav */}
             <div
-                className={`fixed inset-0 top-[80px] bg-white z-40 flex flex-col items-center py-10 gap-6 transition-transform duration-300 md:hidden ${isOpen ? "translate-x-0" : "translate-x-full"
+                className={`fixed inset-0 top-[65px] bg-white z-40 flex flex-col items-center py-10 gap-6 transition-transform duration-300 md:hidden ${isOpen ? "translate-x-0" : "translate-x-full"
                     }`}
             >
                 {navLinks.map((link) => (

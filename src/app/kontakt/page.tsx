@@ -23,7 +23,7 @@ export default function Kontakt() {
                     fill
                     className="object-cover brightness-[0.4]"
                 />
-                <div className="container mx-auto px-6 md:px-12 relative z-10 text-center text-white">
+                <div className="w-[90%] md:container mx-auto md:px-12 relative z-10 text-center text-white">
                     <h1 className="text-4xl md:text-6xl font-bold uppercase tracking-widest mb-4 drop-shadow-xl flex items-center justify-center gap-4">
                         Kontaktujte nás
                     </h1>
@@ -36,7 +36,7 @@ export default function Kontakt() {
                 </div>
             </section>
 
-            <section className="container mx-auto px-6 md:px-12 py-16">
+            <section className="w-[90%] md:container mx-auto md:px-12 py-16">
                 <div className="flex flex-col items-center mb-16 text-center mt-8">
                     <p className="text-dark/60 text-lg max-w-2xl mx-auto italic">
                         Máte otázky? Neváhajte nás kontaktovať. Odpovieme Vám v čo najkratšom čase.
@@ -50,7 +50,7 @@ export default function Kontakt() {
                         initial={{ opacity: 0, x: -30 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
-                        className="flex flex-col gap-12 bg-white p-12 rounded-2xl shadow-xl border border-gray-100"
+                        className="flex flex-col gap-8 md:gap-12 bg-white p-6 md:p-12 rounded-2xl shadow-xl border border-gray-100"
                     >
                         <div className="flex flex-col gap-10">
                             <div className="flex items-start gap-6 group">

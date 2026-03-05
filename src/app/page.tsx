@@ -46,12 +46,12 @@ export default function Home() {
       {/* Certificates Section (Moved to homepage) */}
       <section className="relative py-24 object-cover bg-center" style={{ backgroundImage: "url('/images/certifikaty.jpg')", backgroundSize: "cover" }}>
         <div className="absolute inset-0 bg-black/70 z-0" />
-        <div className="container mx-auto px-6 md:px-12 text-center mb-16 relative z-10">
+        <div className="w-[90%] md:container mx-auto md:px-12 text-center mb-16 relative z-10">
           <h2 className="text-4xl font-bold uppercase text-white tracking-widest mb-4">Naše certifikáty</h2>
           <div className="w-20 h-1.5 bg-secondary mx-auto" />
         </div>
 
-        <div className="container mx-auto px-6 md:px-12 grid grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 relative z-10 pb-16">
+        <div className="w-[90%] md:container mx-auto md:px-12 grid grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 relative z-10 pb-16">
           {homeCerts.map((cert, i) => (
             <div key={i} className={`p-4 flex items-center justify-center transition-all hover:scale-105 cursor-pointer ${(i === 1 || i === 3) ? 'md:translate-y-[70px]' : ''}`} onClick={() => setCertIndex(i)}>
               <Image
@@ -76,7 +76,7 @@ export default function Home() {
 
       {/* Homepage Gallery Section */}
       <section className="bg-white py-24">
-        <div className="container mx-auto px-6 md:px-12 text-center mb-16">
+        <div className="w-[90%] md:container mx-auto md:px-12 text-center mb-16">
           <h2 className="text-4xl font-bold uppercase text-primary tracking-widest mb-4">Referencie</h2>
           <div className="w-20 h-1.5 bg-secondary mx-auto" />
         </div>

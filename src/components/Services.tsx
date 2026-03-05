@@ -31,7 +31,7 @@ const services = [
         href: "/vyhodnotenie-zavad-po-ukonceni-realizacii"
     },
     {
-        title: "PROJEKTOVÁ ČINNOSŤ",
+        title: "PROJEKČNÁ ČINNOSŤ",
         icon: <ClipboardCheck className="w-12 h-12" />,
         bg: "/images/services/Stavebny-dozor.webp",
         href: "/projektova-cinnost-stavebne-cenarstvo"
@@ -41,7 +41,7 @@ const services = [
 export default function Services() {
     return (
         <section id="sluzby" className="bg-[#f8f9fa] py-24 scroll-mt-20">
-            <div className="container mx-auto px-6 md:px-12 text-center mb-16">
+            <div className="w-[90%] md:container mx-auto md:px-12 text-center mb-16">
                 <motion.h2
                     initial={{ opacity: 0, y: -20 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -53,7 +53,7 @@ export default function Services() {
                 <div className="w-20 h-1.5 bg-secondary mx-auto" />
             </div>
 
-            <div className="container mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="w-[90%] md:container mx-auto md:px-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 {services.map((service, index) => (
                     <motion.div
                         key={index}

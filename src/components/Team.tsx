@@ -42,7 +42,7 @@ const members = [
 export default function Team() {
     return (
         <section className="bg-white py-24">
-            <div className="container mx-auto px-6 md:px-12">
+            <div className="w-[90%] md:container mx-auto md:px-12">
                 <div className="flex flex-col items-center mb-16">
                     <motion.h2
                         initial={{ opacity: 0, y: -20 }}

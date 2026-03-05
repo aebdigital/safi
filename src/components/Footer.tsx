@@ -7,7 +7,7 @@ import { Mail, Phone, MapPin, Instagram, Facebook } from "lucide-react";
 export default function Footer() {
     return (
         <footer className="bg-dark text-white pt-16 pb-8">
-            <div className="container mx-auto px-6 md:px-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-12 border-b border-white/10 pb-12">
+            <div className="w-[90%] md:container mx-auto md:px-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-12 border-b border-white/10 pb-12">
                 <div className="flex flex-col gap-6">
                     <Link href="/" className="flex flex-col items-start gap-0">
                         <div className="flex items-baseline gap-1 md:gap-2">
@@ -73,7 +73,7 @@ export default function Footer() {
                 </div>
             </div>
 
-            <div className="container mx-auto px-6 md:px-12 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-white/40 text-[10px] md:text-xs">
+            <div className="w-[90%] md:container mx-auto md:px-12 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-white/40 text-[10px] md:text-xs">
                 <p>© {new Date().getFullYear()} SAFI SK s.r.o. Všetky práva vyhradené.</p>
                 <div className="flex gap-4">
                     <Link href="/ochrana-udajov" className="hover:text-white transition-colors">Ochrana osobných údajov</Link>

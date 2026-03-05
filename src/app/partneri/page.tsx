@@ -86,7 +86,7 @@ export default function Partneri() {
                     fill
                     className="object-cover brightness-[0.4]"
                 />
-                <div className="container mx-auto px-6 md:px-12 relative z-10 text-center text-white">
+                <div className="w-[90%] md:container mx-auto md:px-12 relative z-10 text-center text-white">
                     <h1 className="text-4xl md:text-6xl font-bold uppercase tracking-widest mb-4 drop-shadow-xl flex items-center justify-center gap-4">
                         Partneri
                     </h1>
@@ -99,7 +99,7 @@ export default function Partneri() {
                 </div>
             </section>
 
-            <section className="container mx-auto px-6 md:px-12 py-24 text-center">
+            <section className="w-[90%] md:container mx-auto md:px-12 py-24 text-center">
 
                 <div className="mb-20 max-w-3xl mx-auto">
                     <p className="text-xl md:text-2xl font-medium text-dark/80 italic mb-8">
@@ -160,12 +160,12 @@ export default function Partneri() {
 
             <section className="relative py-24 object-cover bg-center text-center w-full" style={{ backgroundImage: "url('/images/certifikaty.jpg')", backgroundSize: "cover" }}>
                 <div className="absolute inset-0 bg-black/70 z-0" />
-                <div className="container mx-auto px-6 md:px-12 relative z-10 text-center mb-16">
+                <div className="w-[90%] md:container mx-auto md:px-12 relative z-10 text-center mb-16">
                     <h2 className="text-3xl md:text-4xl font-bold uppercase text-white mb-4 tracking-widest">Naše Osvedčenia</h2>
                     <div className="w-20 h-1.5 bg-secondary mx-auto" />
                 </div>
 
-                <div className="container mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 relative z-10 pb-16">
+                <div className="w-[90%] md:container mx-auto md:px-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 relative z-10 pb-16">
                     {certs.map((c, i) => (
                         <motion.div
                             key={i}

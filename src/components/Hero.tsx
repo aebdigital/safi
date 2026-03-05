@@ -51,7 +51,7 @@ export default function Hero() {
                 </motion.div>
             </AnimatePresence>
 
-            <div className="container mx-auto px-6 md:px-12 relative z-20 text-white flex flex-col items-start justify-center w-full">
+            <div className="w-[90%] md:container mx-auto md:px-12 relative z-20 text-white flex flex-col items-start justify-center">
                 <motion.h1
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}

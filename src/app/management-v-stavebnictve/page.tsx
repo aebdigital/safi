@@ -3,16 +3,19 @@ import ServicePage from "@/components/ServicePage";
 export default function Sluzba5() {
     return (
         <ServicePage
+            currentHref="/management-v-stavebnictve"
             title="Management v stavebníctve"
-            description="Ponúkame komplexné riadenie Vášho stavebného projektu od prvej myšlienky až po záverečné odovzdanie kľúčov."
+            description="V labyrinte materiálov a dodávateľov v stavebníctve Vám zariadime:"
             image="/images/services/hero-subpage.webp"
             points={[
-                "Celkové riadenie nákladov projektu",
-                "Plánovanie a harmonogram výstavby",
-                "Výber a koordinácia dodávateľov",
-                "Sledovanie kvality a termínov",
-                "Riešenie krízových situácií",
-                "Priebežný reporting investorovi"
+                "Kontrola projektovej dokumentácie pred zahájením stavby",
+                "Kontrola materiálového zloženia stavby alternatívne odporúčanie na cenovo výhodnejší materiálový ekvivalent",
+                "Odporúčenie spoľahlivých partnerov pre výstavbu",
+                "Koordinácia a riadenie stavebných procesov",
+                "Sledovanie správnosti vyhotovených častí diela – preberacie konania",
+                "Sledovanie správnosti vystavených súpisov k fakturácii a odsúhlasovanie",
+                "Príprava dokladov ku kolaudácii",
+                "Účasť na kolaudačnom konaní"
             ]}
         />
     );

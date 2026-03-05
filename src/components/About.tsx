@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 export default function About() {
     return (
         <section className="bg-[#f0f0f0] py-24 relative overflow-hidden">
-            <div className="container mx-auto px-6 md:px-12 relative z-10 flex flex-col md:flex-row items-center justify-around gap-16 md:gap-0">
+            <div className="w-[90%] md:container mx-auto md:px-12 relative z-10 flex flex-col md:flex-row items-center justify-around gap-16 md:gap-0">
 
                 {/* Main Notebook */}
                 <motion.div
