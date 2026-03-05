@@ -135,7 +135,7 @@ export default function ContactForm() {
                     </>
                 ) : (
                     <>
-                        ODOSIELŤ SPRÁVU
+                        ODOSIELAŤ SPRÁVU
                         <Send size={22} />
                     </>
                 )}
