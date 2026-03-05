@@ -24,7 +24,7 @@ export default function About() {
                             height={900}
                             className="w-full h-auto drop-shadow-lg"
                         />
-                        <div className="absolute inset-0 pt-20 px-12 md:pt-28 md:px-24 flex flex-col gap-4 notebook-text font-handwritten text-primary pointer-events-none">
+                        <div className="absolute inset-0 pt-12 px-10 md:pt-28 md:px-24 flex flex-col gap-4 notebook-text font-handwritten text-primary pointer-events-none">
                             <div className="flex items-baseline gap-2 mb-4">
                                 <span className="text-[#558333] text-2xl md:text-3xl" style={{ fontFamily: 'var(--font-boring)' }}>SAFI SK</span>
                                 <span className="font-bold font-sans text-[10px] md:text-xs tracking-widest text-[#222] uppercase">Stavebný dozor</span>
